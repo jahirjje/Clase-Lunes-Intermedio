@@ -1,0 +1,59 @@
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen{
+  width: 85%;
+  height: 700px;
+  margin: 100px;
+  background-image: url("../imagenes/love1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.gradiente{
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, brown, purple, blue, red);
+
+}
+
+.transformacion{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transform: rotatex(60deg);/*skew(200deg, 300deg );scale(3);rotate(45deg);translate(500px, 200px);*/
+}
+
+.transicion{
+  width: 100px;
+  height: 100px;
+  background: black;
+  transition: background 3s, height 3s, transform 3s;
+  /*transition-delay: 3s;*/
+
+
+}
+
+.transicion:hover{
+  background-color: red;
+  transform: rotate(360deg);
+}
+
+.animacion{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animacion;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes animacion {
+  from {background-color:red;  }
+  to {background-color:white; transform: rotate(360deg);}
+
+}
